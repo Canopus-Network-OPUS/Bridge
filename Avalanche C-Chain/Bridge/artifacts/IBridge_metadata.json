@@ -1,0 +1,60 @@
+{
+	"compiler": {
+		"version": "0.6.4+commit.1dca32f3"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "_chainID",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "ChainSafe Systems.",
+			"methods": {},
+			"title": "Interface for Bridge contract."
+		},
+		"userdoc": {
+			"methods": {
+				"_chainID()": {
+					"notice": "Exposing getter for {_chainID} instead of forcing the use of call."
+				}
+			}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Avalanche C-Chain/Bridge/Bridge.sol": "IBridge"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Avalanche C-Chain/Bridge/Bridge.sol": {
+			"keccak256": "0xf8ae3afa2cefc5132837260f928859e8b1116da37cf02ca8c6f7028193e400be",
+			"urls": [
+				"bzz-raw://8a8fb4d72f6bf37996f0e72a22c2d8753ef1dc6c7021d8e5de765c230e651993",
+				"dweb:/ipfs/Qmb4seyHUXWqF3toiyxJgXSkTMMNnZc1DvCmAWnDvnQGHJ"
+			]
+		}
+	},
+	"version": 1
+}
