@@ -1,0 +1,79 @@
+{
+	"compiler": {
+		"version": "0.6.4+commit.1dca32f3"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "tokenAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "fundERC20",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "ChainSafe Systems.",
+			"methods": {
+				"fundERC20(address,address,uint256)": {
+					"params": {
+						"amount": "Amount of tokens to transfer.",
+						"owner": "Address of current token owner.",
+						"tokenAddress": "Address of ERC20 to transfer."
+					}
+				}
+			},
+			"title": "Manages deposited ERC20s."
+		},
+		"userdoc": {
+			"methods": {
+				"fundERC20(address,address,uint256)": {
+					"notice": "Used to transfer tokens into the safe to fund proposals."
+				}
+			},
+			"notice": "This contract is intended to be used with ERC20Handler contract."
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Avalanche C-Chain/Handler/ERC20Handler.sol": "ERC20Safe"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Avalanche C-Chain/Handler/ERC20Handler.sol": {
+			"keccak256": "0x23be780399731a8d9200d384ba4d5baee06d682d0fc6b33203420a61476f95b4",
+			"urls": [
+				"bzz-raw://f28b3aaf4c278c81379d9bd314eed3291a8211d450a1d49ae5b202dad5748891",
+				"dweb:/ipfs/QmejXkwTddmdqArcCdjJT4JFEjVioHJQB4JmgZvivbYTpQ"
+			]
+		}
+	},
+	"version": 1
+}
