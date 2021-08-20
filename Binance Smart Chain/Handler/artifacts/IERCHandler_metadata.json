@@ -1,0 +1,126 @@
+{
+	"compiler": {
+		"version": "0.6.4+commit.1dca32f3"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "contractAddress",
+						"type": "address"
+					}
+				],
+				"name": "setBurnable",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "resourceID",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "address",
+						"name": "contractAddress",
+						"type": "address"
+					}
+				],
+				"name": "setResource",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "tokenAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountOrTokenID",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "ChainSafe Systems.",
+			"methods": {
+				"setBurnable(address)": {
+					"params": {
+						"contractAddress": "Address of contract to be used when making or executing deposits."
+					}
+				},
+				"setResource(bytes32,address)": {
+					"params": {
+						"contractAddress": "Address of contract to be called when a deposit is made and a deposited is executed.",
+						"resourceID": "ResourceID to be used when making deposits."
+					}
+				},
+				"withdraw(address,address,uint256)": {
+					"params": {
+						"amountOrTokenID": "Either the amount of ERC20 tokens or the ERC721 token ID to release.",
+						"recipient": "Address to release tokens to.",
+						"tokenAddress": "Address of token contract to release."
+					}
+				}
+			},
+			"title": "Interface to be used with handlers that support ERC20s and ERC721s."
+		},
+		"userdoc": {
+			"methods": {
+				"setBurnable(address)": {
+					"notice": "Marks {contractAddress} as mintable/burnable."
+				},
+				"setResource(bytes32,address)": {
+					"notice": "Correlates {resourceID} with {contractAddress}."
+				},
+				"withdraw(address,address,uint256)": {
+					"notice": "Used to manually release funds from ERC safes."
+				}
+			}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Binance Smart Chain/Handler/ERC20Handler.sol": "IERCHandler"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Binance Smart Chain/Handler/ERC20Handler.sol": {
+			"keccak256": "0xba83c3ae820033e2bfbdcf036926c30aa9ffc5a267eeb76b132f54dd27cb95b1",
+			"urls": [
+				"bzz-raw://0faa8cd0f902a92f5d6865f6e98a4d0e6aef8f31fe461bbc71d0a19bfc1378ea",
+				"dweb:/ipfs/QmQfZhEq6yght7JWAHoXK5nYemFkKbQfYJrZYF4Emtf3DQ"
+			]
+		}
+	},
+	"version": 1
+}

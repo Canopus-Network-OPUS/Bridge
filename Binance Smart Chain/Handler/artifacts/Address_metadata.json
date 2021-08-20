@@ -1,0 +1,41 @@
+{
+	"compiler": {
+		"version": "0.6.4+commit.1dca32f3"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Collection of functions related to the address type",
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Binance Smart Chain/Handler/ERC20Handler.sol": "Address"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Binance Smart Chain/Handler/ERC20Handler.sol": {
+			"keccak256": "0xba83c3ae820033e2bfbdcf036926c30aa9ffc5a267eeb76b132f54dd27cb95b1",
+			"urls": [
+				"bzz-raw://0faa8cd0f902a92f5d6865f6e98a4d0e6aef8f31fe461bbc71d0a19bfc1378ea",
+				"dweb:/ipfs/QmQfZhEq6yght7JWAHoXK5nYemFkKbQfYJrZYF4Emtf3DQ"
+			]
+		}
+	},
+	"version": 1
+}

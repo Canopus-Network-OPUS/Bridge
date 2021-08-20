@@ -1,0 +1,115 @@
+{
+	"compiler": {
+		"version": "0.6.4+commit.1dca32f3"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "resourceID",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint8",
+						"name": "destinationChainID",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint64",
+						"name": "depositNonce",
+						"type": "uint64"
+					},
+					{
+						"internalType": "address",
+						"name": "depositer",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "resourceID",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "executeProposal",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "ChainSafe Systems.",
+			"methods": {
+				"deposit(bytes32,uint8,uint64,address,bytes)": {
+					"params": {
+						"data": "Consists of additional data needed for a specific deposit.",
+						"depositNonce": "This value is generated as an ID by the Bridge contract.",
+						"depositer": "Address of account making the deposit in the Bridge contract.",
+						"destinationChainID": "Chain ID deposit is expected to be bridged to."
+					}
+				},
+				"executeProposal(bytes32,bytes)": {
+					"params": {
+						"data": "Consists of additional data needed for a specific deposit execution."
+					}
+				}
+			},
+			"title": "Interface for handler contracts that support deposits and deposit executions."
+		},
+		"userdoc": {
+			"methods": {
+				"deposit(bytes32,uint8,uint64,address,bytes)": {
+					"notice": "It is intended that deposit are made using the Bridge contract."
+				},
+				"executeProposal(bytes32,bytes)": {
+					"notice": "It is intended that proposals are executed by the Bridge contract."
+				}
+			}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Binance Smart Chain/Handler/ERC20Handler.sol": "IDepositExecute"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Binance Smart Chain/Handler/ERC20Handler.sol": {
+			"keccak256": "0xba83c3ae820033e2bfbdcf036926c30aa9ffc5a267eeb76b132f54dd27cb95b1",
+			"urls": [
+				"bzz-raw://0faa8cd0f902a92f5d6865f6e98a4d0e6aef8f31fe461bbc71d0a19bfc1378ea",
+				"dweb:/ipfs/QmQfZhEq6yght7JWAHoXK5nYemFkKbQfYJrZYF4Emtf3DQ"
+			]
+		}
+	},
+	"version": 1
+}
