@@ -1,0 +1,84 @@
+{
+	"compiler": {
+		"version": "0.6.4+commit.1dca32f3"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "resourceID",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "address",
+						"name": "contractAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes4",
+						"name": "depositFunctionSig",
+						"type": "bytes4"
+					},
+					{
+						"internalType": "bytes4",
+						"name": "executeFunctionSig",
+						"type": "bytes4"
+					}
+				],
+				"name": "setResource",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "ChainSafe Systems.",
+			"methods": {
+				"setResource(bytes32,address,bytes4,bytes4)": {
+					"params": {
+						"contractAddress": "Address of contract to be called when a deposit is made and a deposited is executed.",
+						"depositFunctionSig": "Function signature of method to be called in {contractAddress} when a deposit is made.",
+						"executeFunctionSig": "Function signature of method to be called in {contractAddress} when a deposit is executed.",
+						"resourceID": "ResourceID to be used when making deposits."
+					}
+				}
+			},
+			"title": "Interface for handler that handles generic deposits and deposit executions."
+		},
+		"userdoc": {
+			"methods": {
+				"setResource(bytes32,address,bytes4,bytes4)": {
+					"notice": "Correlates {resourceID} with {contractAddress}, {depositFunctionSig}, and {executeFunctionSig}."
+				}
+			}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Binance Smart Chain/Bridge/bridge.sol": "IGenericHandler"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Binance Smart Chain/Bridge/bridge.sol": {
+			"keccak256": "0xf8ae3afa2cefc5132837260f928859e8b1116da37cf02ca8c6f7028193e400be",
+			"urls": [
+				"bzz-raw://8a8fb4d72f6bf37996f0e72a22c2d8753ef1dc6c7021d8e5de765c230e651993",
+				"dweb:/ipfs/Qmb4seyHUXWqF3toiyxJgXSkTMMNnZc1DvCmAWnDvnQGHJ"
+			]
+		}
+	},
+	"version": 1
+}
